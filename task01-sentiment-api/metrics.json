@@ -1,0 +1,72 @@
+{
+  "model_name": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "sample_count": 30,
+  "overall": {
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "weighted_precision": 1.0,
+    "weighted_recall": 1.0,
+    "weighted_f1": 1.0,
+    "mean_confidence": 0.9287
+  },
+  "per_class": {
+    "positive": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 10
+    },
+    "neutral": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 10
+    },
+    "negative": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 10
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "positive",
+      "neutral",
+      "negative"
+    ],
+    "matrix": [
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        10
+      ]
+    ]
+  },
+  "latency_benchmarks": {
+    "single_sample": {
+      "mean_latency_ms": 44.79,
+      "p50_latency_ms": 40.84,
+      "p95_latency_ms": 54.05,
+      "p99_latency_ms": 126.24,
+      "throughput_req_per_sec": 22.33
+    },
+    "batch_sample_size_10": {
+      "total_time_ms": 165.06,
+      "latency_per_item_ms": 16.51,
+      "throughput_items_per_sec": 60.58
+    }
+  }
+}
